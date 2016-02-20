@@ -14,6 +14,10 @@
 		D0D2F0641C776289009A1D52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0D2F0621C776289009A1D52 /* LaunchScreen.storyboard */; };
 		D0D2F06F1C776289009A1D52 /* MyOOPGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D2F06E1C776289009A1D52 /* MyOOPGameTests.swift */; };
 		D0D2F07A1C776289009A1D52 /* MyOOPGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D2F0791C776289009A1D52 /* MyOOPGameUITests.swift */; };
+		D0EC18CA1C78C6C3002B87CD /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EC18C91C78C6C3002B87CD /* GameState.swift */; };
+		D0EC18CC1C78C72E002B87CD /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EC18CB1C78C72E002B87CD /* Character.swift */; };
+		D0EC18CE1C78C759002B87CD /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EC18CD1C78C759002B87CD /* Player.swift */; };
+		D0EC18D01C78C80D002B87CD /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EC18CF1C78C80D002B87CD /* Enemy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		D0D2F0751C776289009A1D52 /* MyOOPGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyOOPGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0D2F0791C776289009A1D52 /* MyOOPGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOOPGameUITests.swift; sourceTree = "<group>"; };
 		D0D2F07B1C776289009A1D52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0EC18C91C78C6C3002B87CD /* GameState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
+		D0EC18CB1C78C72E002B87CD /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		D0EC18CD1C78C759002B87CD /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		D0EC18CF1C78C80D002B87CD /* Enemy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +108,10 @@
 				D0D2F0591C776289009A1D52 /* AppDelegate.swift */,
 				D0D2F05B1C776289009A1D52 /* ViewController.swift */,
 				D0D2F05D1C776289009A1D52 /* Main.storyboard */,
+				D0EC18C91C78C6C3002B87CD /* GameState.swift */,
+				D0EC18CB1C78C72E002B87CD /* Character.swift */,
+				D0EC18CD1C78C759002B87CD /* Player.swift */,
+				D0EC18CF1C78C80D002B87CD /* Enemy.swift */,
 				D0D2F0601C776289009A1D52 /* Assets.xcassets */,
 				D0D2F0621C776289009A1D52 /* LaunchScreen.storyboard */,
 				D0D2F0651C776289009A1D52 /* Info.plist */,
@@ -256,8 +268,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0EC18CA1C78C6C3002B87CD /* GameState.swift in Sources */,
 				D0D2F05C1C776289009A1D52 /* ViewController.swift in Sources */,
+				D0EC18D01C78C80D002B87CD /* Enemy.swift in Sources */,
 				D0D2F05A1C776289009A1D52 /* AppDelegate.swift in Sources */,
+				D0EC18CE1C78C759002B87CD /* Player.swift in Sources */,
+				D0EC18CC1C78C72E002B87CD /* Character.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +500,7 @@
 				D0D2F0801C776289009A1D52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D0D2F0811C776289009A1D52 /* Build configuration list for PBXNativeTarget "MyOOPGameTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +509,7 @@
 				D0D2F0831C776289009A1D52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D0D2F0841C776289009A1D52 /* Build configuration list for PBXNativeTarget "MyOOPGameUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +518,7 @@
 				D0D2F0861C776289009A1D52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
