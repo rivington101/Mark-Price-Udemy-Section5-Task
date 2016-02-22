@@ -19,11 +19,18 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         startGame()
     }
+    
 
     func startGame(){
         soldier = Player(name: "Aragon", hp: 100, attackPwr: 20)
         monster = Enemy(name: "Orc", hp: 100, attackPwr: 20)
         var game = GameState()
+    }
+    
+    @IBAction func monsterAttack(sender: AnyObject) {
+    }
+    
+    @IBAction func soldierAttack(sender: AnyObject) {
     }
 
 
