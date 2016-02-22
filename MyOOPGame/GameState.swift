@@ -10,4 +10,16 @@ import Foundation
 
 class GameState {
     
+    func restartGame() {
+        
+    }
+    
+    func updateMessageBoard() {
+        
+    }
+    
+    func isGameOver() {
+        
+    }
+    
 }

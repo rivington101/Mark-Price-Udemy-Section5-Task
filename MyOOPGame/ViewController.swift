@@ -9,15 +9,21 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    
+    var soldier: Player!
+    var monster: Enemy!
+    var game: GameState!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        startGame()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func startGame(){
+        soldier = Player(name: "Aragon", hp: 100, attackPwr: 20)
+        monster = Enemy(name: "Orc", hp: 100, attackPwr: 20)
+        var game = GameState()
     }
 
 
