@@ -109,6 +109,9 @@
                                     <constraint firstAttribute="width" constant="155" id="rBh-CD-egr"/>
                                 </constraints>
                                 <state key="normal" image="playerattackbtn"/>
+                                <connections>
+                                    <action selector="soldierAttack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QIU-Q5-jtz"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Attack !" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yv2-BD-B99">
                                 <rect key="frame" x="431" y="308" width="64" height="22"/>
@@ -157,7 +160,9 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="monsterHp" destination="eGr-Gh-JRS" id="B54-Wb-Yfv"/>
                         <outlet property="msgCentreLbl" destination="sMR-MB-hxE" id="h18-bc-PBt"/>
+                        <outlet property="playerHp" destination="yrt-L7-KfC" id="wsX-gh-TW4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
