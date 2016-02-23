@@ -11,6 +11,10 @@ import UIKit
 class ViewController: UIViewController {
     
     
+    @IBOutlet weak var msgCentreLbl: UILabel!
+    
+    
+    
     var soldier: Player!
     var monster: Enemy!
     var game: GameState!
