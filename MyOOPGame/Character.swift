@@ -11,6 +11,13 @@ import Foundation
 class Character {
     private var _hp: Int = 100
     private var _attackPwr: Int = 10
+    private var _name = "Character"
+    
+    var name: String {
+        get {
+            return _name
+        }
+    }
     
     var attackPwr: Int {
         get {

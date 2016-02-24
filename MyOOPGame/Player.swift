@@ -11,7 +11,7 @@ import Foundation
 class Player: Character {
     private var _name = "Player"
     
-    var name: String {
+    override var name: String {
         get {
             return _name
         }

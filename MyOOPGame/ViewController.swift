@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
     
@@ -22,30 +23,64 @@ class ViewController: UIViewController {
     var monster: Enemy!
     var game: GameState!
     var hp: Int!
+    var ap: Int!
+    var swordSound: AVAudioPlayer!
+    var deathSound: AVAudioPlayer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        //NSTimer.scheduledTimerWithTimeInterval(2.0, target: self, selector: "startGame", userInfo: nil, repeats: false)
+        setUpSoundAssetPaths()
         startGame()
     }
     
 
     func startGame(){
-        //character = Character(startingHp: 100, attackPwr: 20)
-        soldier = Player(name: "Aragon", hp: 99, attackPwr: 20)
-        monster = Enemy(name: "Orc", hp: 99, attackPwr: 20)
+        hp = Int(arc4random_uniform(19)) + 1
+        ap = Int(arc4random_uniform(3)) + 1
+        monsterHp.text = "HP: \(hp)"
+        playerHp.text = "HP: \(hp)"
+        soldier = Player(name: "Aragon", hp: hp, attackPwr: ap)
+        monster = Enemy(name: "Orc", hp: hp, attackPwr: ap)
         game = GameState(playerOne: soldier, playerTwo: monster, vc: self)
+        msgCentreLbl.text = "\(monster.name) Vs \(soldier.name)"
     }
     
     @IBAction func monsterAttack(sender: AnyObject) {
+        swordSound.stop()
         soldier.attemptAttack(monster.attackPwr)
-        game.updateHp()
+        game.updateHp(soldier)
     }
     
     @IBAction func soldierAttack(sender: AnyObject) {
+        swordSound.stop()
+        monster.attemptAttack(soldier.attackPwr)
+        game.updateHp(monster)
     }
+    
+    func setUpSoundAssetPaths() {
+        let path = NSBundle.mainBundle().pathForResource("sword", ofType: "wav")
+        let soundUrl = NSURL(fileURLWithPath: path!)
+        
+        do {
+            try swordSound = AVAudioPlayer(contentsOfURL: soundUrl)
+            swordSound.prepareToPlay()
+        } catch let err as NSError {
+            print(err.debugDescription)
+        }
+        
+        let path1 = NSBundle.mainBundle().pathForResource("death", ofType: "wav")
+        let soundUrl1 = NSURL(fileURLWithPath: path1!)
+        
+        do {
+            try deathSound = AVAudioPlayer(contentsOfURL: soundUrl1)
+            deathSound.prepareToPlay()
+        } catch let err as NSError {
+            print(err.debugDescription)
+        }
 
-
+    }
 
 }
 

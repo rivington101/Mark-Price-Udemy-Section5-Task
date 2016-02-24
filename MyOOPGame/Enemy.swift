@@ -11,7 +11,7 @@ import Foundation
 class Enemy: Character {
     private var _name = "Enemy"
     
-    var name: String {
+    override var name: String {
         get {
             return _name
         }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D04B63C21C7E0A1A007EB844 /* death.wav in Resources */ = {isa = PBXBuildFile; fileRef = D04B63C01C7E0A1A007EB844 /* death.wav */; };
+		D04B63C31C7E0A1A007EB844 /* sword.wav in Resources */ = {isa = PBXBuildFile; fileRef = D04B63C11C7E0A1A007EB844 /* sword.wav */; };
 		D0D2F05A1C776289009A1D52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D2F0591C776289009A1D52 /* AppDelegate.swift */; };
 		D0D2F05C1C776289009A1D52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D2F05B1C776289009A1D52 /* ViewController.swift */; };
 		D0D2F05F1C776289009A1D52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0D2F05D1C776289009A1D52 /* Main.storyboard */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D04B63C01C7E0A1A007EB844 /* death.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = death.wav; path = "../../oop-exercise-sound/death.wav"; sourceTree = "<group>"; };
+		D04B63C11C7E0A1A007EB844 /* sword.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = sword.wav; path = "../../oop-exercise-sound/sword.wav"; sourceTree = "<group>"; };
 		D0D2F0561C776289009A1D52 /* MyOOPGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyOOPGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0D2F0591C776289009A1D52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0D2F05B1C776289009A1D52 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +109,8 @@
 		D0D2F0581C776289009A1D52 /* MyOOPGame */ = {
 			isa = PBXGroup;
 			children = (
+				D04B63C01C7E0A1A007EB844 /* death.wav */,
+				D04B63C11C7E0A1A007EB844 /* sword.wav */,
 				D0D2F0591C776289009A1D52 /* AppDelegate.swift */,
 				D0D2F05B1C776289009A1D52 /* ViewController.swift */,
 				D0D2F05D1C776289009A1D52 /* Main.storyboard */,
@@ -241,9 +247,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D04B63C31C7E0A1A007EB844 /* sword.wav in Resources */,
 				D0D2F0641C776289009A1D52 /* LaunchScreen.storyboard in Resources */,
 				D0D2F0611C776289009A1D52 /* Assets.xcassets in Resources */,
 				D0D2F05F1C776289009A1D52 /* Main.storyboard in Resources */,
+				D04B63C21C7E0A1A007EB844 /* death.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
