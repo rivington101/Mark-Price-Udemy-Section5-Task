@@ -68,9 +68,4 @@ class GameState: NSObject {
         self._vc.soldierAtkBtn.enabled = true
     }
     
-    func isGameOver() {
-        // not needed?
-        
-    }
-    
 }
