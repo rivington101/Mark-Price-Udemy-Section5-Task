@@ -37,6 +37,7 @@ class GameState: NSObject {
             self.swordNoise()
             self._vc.playerHp.text = "HP: \(_playerOne.hp)"
             self._vc.monsterHp.text = "HP: \(_playerTwo.hp)"
+            disableAtkBtns()
         }
         
     }
@@ -53,6 +54,18 @@ class GameState: NSObject {
             self._vc.swordSound.stop()
         }
         self._vc.swordSound.play()
+    }
+    
+    func disableAtkBtns() {
+        let delay: NSTimeInterval = Double(arc4random_uniform(2))
+        self._vc.monsterAtkBtn.enabled = false
+        self._vc.soldierAtkBtn.enabled = false
+        NSTimer.scheduledTimerWithTimeInterval(delay, target: self, selector: "enableAtkBtns", userInfo: nil, repeats: false)
+    }
+    
+    func enableAtkBtns() {
+        self._vc.monsterAtkBtn.enabled = true
+        self._vc.soldierAtkBtn.enabled = true
     }
     
     func isGameOver() {

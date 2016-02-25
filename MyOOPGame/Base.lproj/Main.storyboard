@@ -160,9 +160,11 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="monsterAtkBtn" destination="2Qa-UU-U7p" id="OO4-QE-xox"/>
                         <outlet property="monsterHp" destination="eGr-Gh-JRS" id="B54-Wb-Yfv"/>
                         <outlet property="msgCentreLbl" destination="sMR-MB-hxE" id="h18-bc-PBt"/>
                         <outlet property="playerHp" destination="yrt-L7-KfC" id="wsX-gh-TW4"/>
+                        <outlet property="soldierAtkBtn" destination="XlG-rd-TZb" id="5nc-1N-01k"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

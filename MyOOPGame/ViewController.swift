@@ -18,6 +18,11 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var playerHp: UILabel!
     
+    @IBOutlet weak var monsterAtkBtn: UIButton!
+    
+    @IBOutlet weak var soldierAtkBtn: UIButton!
+    
+    
     //var character: Character!
     var soldier: Player!
     var monster: Enemy!
