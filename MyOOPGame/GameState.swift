@@ -34,7 +34,7 @@ class GameState: NSObject {
             NSTimer.scheduledTimerWithTimeInterval(3, target: self, selector: "restartGame", userInfo: nil, repeats: false)
             
         } else {
-            self.swordNoise()
+            //self.swordNoise()
             self._vc.playerHp.text = "HP: \(_playerOne.hp)"
             self._vc.monsterHp.text = "HP: \(_playerTwo.hp)"
             disableAtkBtns()

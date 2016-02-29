@@ -53,13 +53,15 @@ class ViewController: UIViewController {
     }
     
     @IBAction func monsterAttack(sender: AnyObject) {
-        swordSound.stop()
+        //swordSound.stop()
+        game.swordNoise()
         soldier.attemptAttack(monster.attackPwr)
         game.updateHp(soldier)
     }
     
     @IBAction func soldierAttack(sender: AnyObject) {
-        swordSound.stop()
+        //swordSound.stop()
+        game.swordNoise()
         monster.attemptAttack(soldier.attackPwr)
         game.updateHp(monster)
     }
